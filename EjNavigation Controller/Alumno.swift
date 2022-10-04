@@ -7,18 +7,16 @@
 //
 
 class Alumno{
-    var nombre : String
-    var matricula : String
-    var carrera : String
-    var edad : Int
-    var materias : [Materia]
+    var titulo : String
+    var año : String
+    var autor : String
+    var genero : String
 
-    init(nombre: String, matricula: String, carrera: String, edad: Int, materias : [Materia]){
-        self.nombre = nombre
-        self.matricula = matricula
-        self.carrera = carrera
-        self.edad = edad
-        self.materias = materias
+    init(titulo: String, año: String, autor: String, genero : String){
+        self.titulo = titulo
+        self.año = año
+        self.autor = autor
+        self.genero = genero
     }
     
 }
