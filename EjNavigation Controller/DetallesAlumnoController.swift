@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableViewDataSource{
+class DetallesLibroController : UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var lblValorEdad: UILabel!
     @IBOutlet weak var lblValorMatricula: UILabel!
     @IBOutlet weak var lblValorCarrera: UILabel!
@@ -21,13 +21,13 @@ class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         
         if alumno != nil{
-            self.title = alumno?.nombre
+            self.titulo = title?.titulo
             lblValorMatricula.text = alumno?.matricula
             lblValorEdad.text = "\(alumno!.edad)"
             lblValorCarrera.text = alumno!.carrera
             
         }else{
-            self.title = "Detalles de Alumno"
+            self.title = "Detalles del Libro"
         }
         
     }
